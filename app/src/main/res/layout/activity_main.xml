@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="#004D40"
+            android:layout_gravity="fill_vertical"
+            tools:context="com.example.caisarus.organizatorus.MainActivity">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convertorus"
+                style="@style/editText"
+                android:textSize="30dp"/>
+
+            <LinearLayout
+                android:id="@+id/mpg_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/mpg_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="MPG"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/mpg_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="L "
+                    android:textOff="M "
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/mpg_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 L/KM"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/miles_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/miles_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Miles"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/miles_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="M "
+                    android:textOff="Km"
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/miles_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 KM"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feet_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/feet_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Feet"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/feet_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="M "
+                    android:textOff="Ft"
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/feet_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 Meters"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pounds_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/pounds_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Pounds"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/pounds_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="Kg"
+                    android:textOff="P "
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/pounds_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 Kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oz_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/oz_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ounces"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/oz_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="Kg"
+                    android:textOff="Oz"
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/oz_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 Kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stones_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/stones_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Stones"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/stones_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="Kg"
+                    android:textOff="S"
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/stones_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 Kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/temperature_converter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/temperature_edit_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Degrees"
+                    style="@style/editText"
+                    android:inputType="numberDecimal"
+                    />
+
+                <Switch
+                    android:id="@+id/temperature_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:textOn="C°"
+                    android:textOff="F°"
+                    android:showText="true"/>
+
+                <TextView
+                    android:id="@+id/temperature_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/switchView"
+                    android:text="0 C°"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#004D40">
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="C\nA\nL\nC\nU\nL\nA\nT\nE"
+                android:textColor="#212121"
+                android:onClick="calculate"
+                style="@style/Widget.AppCompat.Button.Colored"
+
+                android:rotation="0"
+
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

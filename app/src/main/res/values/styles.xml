@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796B</item>
+        <item name="colorAccent">#00BCD4</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#E1F5FE</item>
+        <item name="android:textColorHint">#81D4FA</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="switchView">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">#E1F5FE</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+</resources>
